@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.ide.markerResolution">
+      <markerResolutionGenerator
+            class="ar.edu.tadp.savequickfix.SaveQuickFix"
+            markerType="org.eclipse.core.resources.problemmarker">
+      </markerResolutionGenerator>
+   </extension>
+   <extension
+         point="org.eclipse.jdt.ui.quickAssistProcessors">
+      <quickAssistProcessor
+            class="ar.edu.tadp.savequickfix.SaveQuickFix"
+            id="save-quickfix.savequickfix"
+            name="test">
+      </quickAssistProcessor>
+   </extension>
+
+
+</plugin>
